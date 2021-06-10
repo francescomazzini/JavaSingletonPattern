@@ -3,15 +3,10 @@
 The term "Singleton" comes from mathematics and means: a set with only an object.
 
 Before we introduce you the Singleton pattern, you should know that this pattern has a very bad reputation among programmers, in a sense that is considered an anti-Pattern because it is frequently used in scenarios where it is not beneficial, causing unnecessary restrictions in situations where it is not actually required.
-With the present, we would like to show the common situations where a singleton is or not needed, providing some example on how to implement it, so that you may consider it to adopt it in your project.
-
+With the present, we would like to show you the common situations where a singleton is or not needed, providing some example on how to implement it.
 
 # Which problem aims to resolve?
 So what Singleton pattern does is to make a class having a single instance, managed by the class itself and easily accessed by all the other classes.
-
-# Why did we chose this pattern?
-During the development of our project we got into a situation where it might be useful to adopt a singleton.
-In our project there is a Balance, which is the primary resource of the game, that has many dependent classes and is shared between multiple threads. Furthermore, this class must have only an instance for the whole project.
 
 # When Singleton Pattern is needed
 Before showing the singleton, we would like to show the common problems that this pattern aims to resolve.
@@ -81,7 +76,7 @@ This is not a good solution because we are not sure whether another Contacts (ab
 object may be instantiated somewhere.
 It is hard to reuse it and test it, because a Contacts instance is needed or we need to create a "unique" instantiation that is passed to each class constructor that need that instance.
 
-[Problem 1.1](src/main/java/solution1/PersonProblem1.java)
+[Problem 1.1](src/main/java/solution1/PersonProblem1.java)  
 [Problem 1.2](src/main/java/solution1/PersonProblem2.java)
 
 ## Solution 2
@@ -101,7 +96,7 @@ actions on a single static variable that pretends to be unique, like an object w
 Our utility class was designed to be non instantiable, by making all its methods static. However, its constructor is still accessible and instantiable.
 This class can be unintentionally instantiable.
 
-The singleton enforces noninstantiability by making the constructor  private.
+The singleton enforces non-instantiability by making the constructor  private.
 
 [Problem 2.1](src/main/java/solution2/PersonProblem1.java)
 
