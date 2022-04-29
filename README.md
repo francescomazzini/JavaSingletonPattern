@@ -5,7 +5,7 @@ The term "Singleton" comes from mathematics and means: a set with only an object
 Before we introduce you the Singleton pattern, you should know that this pattern has a very bad reputation among programmers, in a sense that is considered an anti-Pattern because it is frequently used in scenarios where it is not beneficial, causing unnecessary restrictions in situations where it is not actually required.
 With the present, we would like to show you the common situations where a singleton is or not needed, providing some example on how to implement it.
 
-# Which problem aims to resolve?
+# Which problem aims to solve?
 So what Singleton pattern does is to make a class having a single instance, managed by the class itself and easily accessed by all the other classes.
 
 # When Singleton Pattern is needed
